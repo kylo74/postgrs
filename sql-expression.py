@@ -60,7 +60,6 @@ with db.connect() as connection:
     # "Track" table
     # select_query = track_table.select().where(track)table.c.Composer == "Queen"
 
-
     results = connection.execute(select_query)
     for result in results:
         print(result)
